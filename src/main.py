@@ -1,11 +1,12 @@
 """
 File where definition of main class is hidden
 """
-import requests
-import time
 import random
+import time
 
-from userinfo import UserInfo
+import requests
+
+from src.userinfo import UserInfo
 
 
 class ShrewdBot:
@@ -72,6 +73,10 @@ class ShrewdBot:
                 self.login_status = False
                 print("Login failed")
         else:
-            print("Connection problems")
+            print("Connection problems / Account Banned")
+
+    def upload_photo(self):
+        print("test")
+
 
 ShrewdBot(123, 123)
